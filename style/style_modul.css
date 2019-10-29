@@ -1,0 +1,97 @@
+.triangle_two{
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid transparent;
+    border-left: 100px solid white;
+    overflow: hidden;
+    animation: blue_triangle 3s ease forwards 1s;
+    
+}
+.triangle_one{
+    position: absolute;
+    margin-top: -100px;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-bottom: 100px solid white;
+    overflow: hidden;
+    animation: red_triangle 3s ease forwards 1s;
+}
+@keyframes blue_triangle{
+    0%{
+        transform: translate(0);
+        border-left: 100px solid aqua;
+    }
+    10%{
+        transform: translateX(30px);
+    }
+    20%{
+        transform: translateX(70px);
+    }
+    30%{
+        transform: translateX(150px);
+    }
+    40%{
+        transform: translateX(250px);
+    }
+    50%{
+        transform: translateX(350px);
+    }
+    60%{
+        transform: translate(350px,50px);
+    }
+    70%{
+        transform: translate(350px,150px);
+    }
+    80%{
+        transform: translate(350px,250px);
+    }
+    90%{
+        transform: translate(350px,350px);
+    }
+    100%{
+        transform: translate(350px,450px);
+        border-left: 100px solid pink;
+    }
+
+
+}
+
+@keyframes red_triangle{
+    0%{
+        transform: translate(0);
+        border-bottom: 100px solid red;
+    }
+    10%{
+        transform: translateY(30px);
+    }
+    20%{
+        transform: translateY(70px);
+    }
+    30%{
+        transform: translateY(250px);
+    }
+    40%{
+        transform: translateY(350px);
+    }
+    50%{
+        transform: translateY(450px);
+    }
+    60%{
+        transform: translate(20px,450px);
+    }
+    70%{
+        transform: translate(150px,450px);
+    }
+    80%{
+        transform: translate(250px,450px);
+    }
+    90%{
+        transform: translate(300px,450px);
+    }
+    100%{
+        transform: translate(350px,450px);
+        border-bottom: 100px solid greenyellow;
+    }
+
+}
